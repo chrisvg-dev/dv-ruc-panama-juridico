@@ -7,7 +7,7 @@ import static com.cvg.BuildDVService.calcularDigitoVerificador;
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        String[] ruc = { "155707757-2-2021", "318251-1-412645" };
+        String[] ruc = { "RUC1", "RUC2" }; // You need to add the ruc number with dashes otherwise the application will not work correctly
         for(String r: ruc) {
             logger.error( String.format("El DV para el RUC %s es %s", r, calcularDigitoVerificador(r) ));
         }
